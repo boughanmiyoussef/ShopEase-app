@@ -32,7 +32,7 @@ Ensure you have the following tools installed on your machine:
 ### Steps to Set Up the Project Locally:
 1. Clone the repository:
     ```bash
-    git clone https://github.com/boughanmiyoussef/ShopEase-Website.git
+    git clone https://github.com/boughanmiyoussef/ShopEase-App.git
     ```
 2. Navigate to the project directory:
     ```bash

@@ -1,0 +1,109 @@
+[
+  {
+    "id": 1,
+    "name": "Luxury Smartwatch",
+    "category": "accessories",
+    "description": "A sophisticated smartwatch with advanced features and sleek design.",
+    "price": 149.99,
+    "oldPrice": 199.99,
+    "image": "https://images.unsplash.com/photo-1416339306562-f3d12fefd36f",
+    "color": "black",
+    "rating": 4.5,
+    "author": "admin"
+  },
+  {
+    "id": 2,
+    "name": "Aqua Fusion Bottle",
+    "category": "dress",
+    "description": "A sleek and modern water bottle designed to keep your drinks cold for 24 hours.",
+    "price": 149.99,
+    "oldPrice": 199.99,
+    "image": "https://images.unsplash.com/photo-1517404215738-15263e9f9178",
+    "color": "red",
+    "rating": 4.0
+  },
+  {
+    "id": 3,
+    "name": "Mystic Horizon Lamp",
+    "category": "jewellery",
+    "description": "A beautiful ambient light that changes colors, perfect for creating a serene atmosphere.",
+    "price": 199.99,
+    "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108",
+    "color": "gold",
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "name": "Velvet Matte Lipstick",
+    "category": "cosmetics",
+    "description": "Matte finish lipstick offering intense color and long wear.",
+    "price": 19.99,
+    "image": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b",
+    "color": "red",
+    "rating": 4.2
+  },
+  {
+    "id": 5,
+    "name": "Urban Nomad Backpack",
+    "category": "accessories",
+    "description": "A durable, waterproof backpack designed for the modern traveler, with multiple compartments.",
+    "price": 29.99,
+    "oldPrice": 39.99,
+    "image": "https://images.unsplash.com/photo-1590698933947-a202b069a861",
+    "color": "blue",
+    "rating": 4.3
+  },
+  {
+    "id": 6,
+    "name": "Velvet Whisper Sofa",
+    "category": "dress",
+    "description": "An elegant and soft velvet sofa that offers a luxurious touch to any living room.",
+    "price": 89.99,
+    "image": "https://images.unsplash.com/photo-1640890959827-6307611b34a1",
+    "color": "black",
+    "rating": 4.4
+  },
+  {
+    "id": 7,
+    "name": "Emberstone Candle",
+    "category": "jewellery",
+    "description": "A hand-poured soy candle with a rich, warm scent of cinnamon and vanilla.",
+    "price": 299.99,
+    "oldPrice": 349.99,
+    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5",
+    "color": "silver",
+    "rating": 4.8
+  },
+  {
+    "id": 8,
+    "name": "Solar Touch Watch",
+    "category": "cosmetics",
+    "description": "A futuristic solar-powered watch with a sleek design and eco-friendly features.",
+    "price": 39.99,
+    "oldPrice": 40.00,
+    "image": "https://images.unsplash.com/photo-1561131989-b8112bafbd43",
+    "color": "beige",
+    "rating": 4.1
+  },
+  {
+    "id": 9,
+    "name": "Zenith Glass Vase",
+    "category": "accessories",
+    "description": "A minimalist vase with a unique geometric design, perfect for modern home decor",
+    "price": 49.99,
+    "image": "https://images.unsplash.com/photo-1639095150499-923d59490bad",
+    "color": "black",
+    "rating": 4.6
+  },
+  {
+    "id": 10,
+    "name": "EchoSound Bluetooth Speaker",
+    "category": "dress",
+    "description": "A portable Bluetooth speaker with crisp sound quality and up to 12 hours of battery life",
+    "price": 59.99,
+    "oldPrice": 79.99,
+    "image": "https://images.unsplash.com/photo-1541239370886-851049f91487",
+    "color": "green",
+    "rating": 4.2
+  }
+]

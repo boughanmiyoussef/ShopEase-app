@@ -20,10 +20,10 @@ const AboutUs = () => {
         transition={{ duration: 1 }}
       >
         <h1 className="text-5xl font-semibold text-center mb-6 text-primary">
-          About Shopease
+          About ShopEase
         </h1>
         <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-          At Shopease, we are dedicated to revolutionizing the e-commerce experience. Our mission is to provide innovative solutions that empower individuals and businesses to achieve their goals with ease and efficiency. We believe in the power of technology to transform lives and are committed to delivering exceptional value to our customers.
+          At ShopEase, we are dedicated to revolutionizing the e-commerce experience. Our mission is to provide innovative solutions that empower individuals and businesses to achieve their goals with ease and efficiency. We believe in the power of technology to transform lives and are committed to delivering exceptional value to our customers.
         </p>
       </motion.section>
 

@@ -73,7 +73,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link 
-              to="/shop" 
+              to="/search" 
               className="text-gray-700 hover:text-primary"
             >
               Shop

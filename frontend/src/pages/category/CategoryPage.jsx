@@ -23,15 +23,16 @@ const CategoryPage = () => {
 
   return (
     <>
-      <section className='section__container bg-primary-light'>
-        <h2 className='section__header capitalize'>{categoryName}</h2>
-        <p className='section__subheader'>
-          jsdfksdhsdfhsdhjlfhjsdhjfsjdkjksjkfjksdjfsjkfldsj;fasl/bsavd/jsbvjdbsbjs
-        </p>
-      </section>
+<section className='section__container bg-primary-light'>
+  <h2 className='section__header capitalize'> Discover Our {categoryName} Collection</h2>
+  <p className='section__subheader'>
+    Explore the best of {categoryName} with handpicked items that offer quality and style. Shop now for exclusive deals and must-have products!
+  </p>
+</section>
+
 
       {/* Products Card */}
-      <div className='section__container'> 
+      <div className='section__container bg-primary-light'> 
         <ProductCards products={filteredProducts} />
       </div>
     </>

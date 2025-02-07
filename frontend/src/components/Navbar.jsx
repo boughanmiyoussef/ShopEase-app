@@ -49,7 +49,7 @@ const Navbar = () => {
       <nav className="max-w-screen-2xl mx-auto px-4 py-3 flex justify-between items-center">
 
         <div className="nav__logo">
-          <Link to="/" className="text-2xl font-bold text-gray-800">ShopEase<span>.</span></Link>
+          <Link to="/#" onClick={scrollToTop} className="text-2xl font-bold text-gray-800">ShopEase<span>.</span></Link>
         </div>
 
         <div className="lg:hidden flex items-center">

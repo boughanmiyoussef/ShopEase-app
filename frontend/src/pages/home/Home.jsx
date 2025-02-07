@@ -5,9 +5,9 @@ import HeroSection from './HeroSection'
 import TrendingProducts from "../shop/TrendingProducts"
 import DealsSection from './DealsSection'
 import { PromoBanner } from './PromoBanner'
-import Blogs from '../blogs/Blogs';  // Default import
-import PeopleRate from './Qa'
+import Blogs from '../blogs/Blogs';
 import Qa from './Qa'
+import PeopleRate from './PeopleRate'
 
 const Home = () => {
   return (

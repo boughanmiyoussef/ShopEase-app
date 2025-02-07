@@ -1,7 +1,45 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import dealsImg from "../../assets/deals.png"; // Replace with actual path to your image
 
 const DealsSection = () => {
+  // State to store the countdown timer (in seconds)
+  const [timeLeft, setTimeLeft] = useState({
+    days: 14,
+    hours: 8,
+    minutes: 6,
+    seconds: 6,
+  });
+
+  useEffect(() => {
+    // Function to decrement the countdown every second
+    const interval = setInterval(() => {
+      setTimeLeft((prevTime) => {
+        let { days, hours, minutes, seconds } = prevTime;
+
+        if (seconds > 0) {
+          seconds -= 1;
+        } else if (minutes > 0) {
+          minutes -= 1;
+          seconds = 59;
+        } else if (hours > 0) {
+          hours -= 1;
+          minutes = 59;
+          seconds = 59;
+        } else if (days > 0) {
+          days -= 1;
+          hours = 23;
+          minutes = 59;
+          seconds = 59;
+        }
+
+        return { days, hours, minutes, seconds };
+      });
+    }, 1000);
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <style>
@@ -40,7 +78,6 @@ const DealsSection = () => {
             align-items: flex-start;
           }
 
-          /* Updated colors for text */
           .deals-content h5 {
             font-size: 1.2rem;
             color: #FF5722; /* Warm orange for emphasis */
@@ -62,7 +99,6 @@ const DealsSection = () => {
             margin-bottom: 25px;
           }
 
-          /* Updated countdown card colors */
           .deals-countdown {
             display: flex;
             justify-content: space-between;
@@ -80,6 +116,7 @@ const DealsSection = () => {
             font-weight: bold;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             flex: 1;
+            transition: all 0.5s ease; /* Smooth transition */
           }
 
           .deals-countdown-card h4 {
@@ -117,19 +154,19 @@ const DealsSection = () => {
 
           <div className="deals-countdown">
             <div className="deals-countdown-card">
-              <h4>14</h4>
+              <h4>{timeLeft.days}</h4>
               <p>Days</p>
             </div>
             <div className="deals-countdown-card">
-              <h4>8</h4>
+              <h4>{timeLeft.hours}</h4>
               <p>Hours</p>
             </div>
             <div className="deals-countdown-card">
-              <h4>6</h4>
+              <h4>{timeLeft.minutes}</h4>
               <p>Minutes</p>
             </div>
             <div className="deals-countdown-card">
-              <h4>6</h4>
+              <h4>{timeLeft.seconds}</h4>
               <p>Seconds</p>
             </div>
           </div>

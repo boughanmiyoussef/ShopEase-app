@@ -2,27 +2,25 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import CartModal from '../pages/shop/productDetails/CartModal';
-import { logout } from '../redux/features/auth/authSlice'; // assuming you have this action
-
-import avatarImg from "../assets/avatar.png"; // Default avatar image
+import { logout } from '../redux/features/auth/authSlice'; 
+import avatarImg from "../assets/avatar.png";
 
 const Navbar = () => {
-  const products = useSelector((state) => state.cart.products); // Get cart products from Redux
-  const { user } = useSelector((state) => state.auth); // Get user state from Redux
-  const dispatch = useDispatch(); // Dispatch to logout when user logs out
+  const products = useSelector((state) => state.cart.products);
+  const { user } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // To toggle mobile menu
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleCartToggle = () => {
-    setIsCartOpen(!isCartOpen); // Toggle cart modal visibility
+    setIsCartOpen(!isCartOpen);
   };
 
   const handleLogout = () => {
-    dispatch(logout()); // Dispatch logout action
+    dispatch(logout());
   };
 
-  // Dropdown menus for Admin and User
   const adminDropDownMenus = [
     { label: "Dashboard", path: "/dashboard/admin" },
     { label: "Manage Items", path: "/dashboard/manage-products" },
@@ -42,19 +40,18 @@ const Navbar = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // Smooth scroll to the top
+      behavior: 'smooth',
     });
   };
 
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
       <nav className="max-w-screen-2xl mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
+
         <div className="nav__logo">
           <Link to="/" className="text-2xl font-bold text-gray-800">ShopEase<span>.</span></Link>
         </div>
 
-        {/* Hamburger Menu for Mobile */}
         <div className="lg:hidden flex items-center">
           <button
             className="text-gray-700 hover:text-primary"
@@ -64,7 +61,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Navigation Links (Hidden on Mobile, visible on Desktop) */}
         <ul className={`lg:flex space-x-6 ${isMenuOpen ? 'block' : 'hidden'} lg:block`}>
           <li>
             <Link 
@@ -101,14 +97,13 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Search, Cart, and Profile */}
         <div className="flex items-center space-x-6 relative">
-          {/* Search Icon */}
+
           <Link to="/search" className="text-gray-700 hover:text-primary">
             <i className="ri-search-line"></i>
           </Link>
 
-          {/* Cart Icon with Badge */}
+        
           <button onClick={handleCartToggle} className="relative text-gray-700 hover:text-primary">
             <i className="ri-shopping-cart-2-line"></i>
             {products.length > 0 && (

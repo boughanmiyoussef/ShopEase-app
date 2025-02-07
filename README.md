@@ -27,7 +27,7 @@ The MVP addresses the following key user stories:
 Ensure you have the following tools installed on your machine:
 
 - **Node.js**: For backend development.
-- **MySQL**: For storing user and product data.
+- **MongoDB**: For storing user and product data.
 
 ### Steps to Set Up the Project Locally:
 1. Clone the repository:
@@ -42,7 +42,7 @@ Ensure you have the following tools installed on your machine:
     ```bash
     npm install
     ```
-4. Set up your MySQL database and create a `.env` file with the following content:
+4. Set up your MongoDB database and create a `.env` file with the following content:
     ```env
     DB_HOST=localhost
     DB_USER=root
@@ -51,12 +51,12 @@ Ensure you have the following tools installed on your machine:
     ```
 5. Run the application:
     ```bash
-    npm start
+    npm run dev
     ```
 6. Open the app at [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🛠️ Technologies Used
-- **Frontend**: HTML, CSS, JavaScript, React.js, Material UI, Redux
+- **Frontend**: HTML, CSS, JavaScript, React.js, Tailwind CSS, Redux
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Authentication**: JWT (JSON Web Tokens) for secure logins
@@ -71,7 +71,6 @@ Ensure you have the following tools installed on your machine:
 ## 🖼️ Mockups
 1. **User Registration Page**
    - Fields: Username, Email, Password
-   - CTA: Sign Up
 2. **Product Search and Filter Page**
    - Search bar for keywords
    - Filters for price range, category, and ratings
@@ -116,4 +115,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Hashtags**: #ShopEase #ECommerce #OnlineShopping #NodeJS #MySQL #JWT #WebApp #ShoppingCart #UserExperience
+**Hashtags**: #ShopEase #ECommerce #OnlineShopping #NodeJS #MongoDB #JWT #WebApp #ShoppingCart #UserExperience
